@@ -3,53 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padmalakshmi G | Portfolio</title>
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
 <body>
+
     <!-- Header & Navigation -->
     <header>
-        <nav>
-            <a href="#hero">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="nav-container">
+            <div class="logo">Padmalakshmi G</div>
+            <nav>
+                <a href="#hero"><i class="fas fa-home"></i> Home</a>
+                <a href="#about"><i class="fas fa-user"></i> About</a>
+                <a href="#skills"><i class="fas fa-code"></i> Skills</a>
+                <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+            </nav>
+        </div>
     </header>
 
     <!-- Hero / Home Section -->
     <section id="hero">
-        <img src="Photo.jpeg" alt="Padmalakshmi G" width="150">
-        <h1>Hi, I'm Padmalakshmi G</h1>
-        <p>Computer Science Student & Web Developer</p>
+        <div class="hero-content">
+            <img src="photo.jpeg" alt="Padmalakshmi G">
+            <h1>Hi, I'm Padmalakshmi G</h1>
+            <p>Computer Science Student & Web Developer</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
     </section>
 
     <!-- About Me Section -->
     <section id="about">
-        <h2>About Me</h2>
-        <p>I am a second-year Computer Science & Engineering undergraduate student at Chennai Institute of Technology with a strong passion for full-stack development and software engineering.</p>
+        <h2><i class="fas fa-user-graduate"></i> About Me</h2>
+        <p>I am a second-year Computer Science & Engineering undergraduate student at Chennai Institute of Technology with a strong passion for full-stack development, interactive system design, and software engineering.</p>
     </section>
 
     <!-- Skills Section -->
     <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML5 & CSS3</li>
-            <li>JavaScript & TypeScript</li>
-            <li>Java & Spring Boot</li>
-            <li>Git & GitHub</li>
-        </ul>
+        <h2><i class="fas fa-laptop-code"></i> Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5 & CSS3</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript & TypeScript</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-java"></i>
+                <h3>Java & Spring Boot</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-git-alt"></i>
+                <h3>Git & GitHub</h3>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact</h2>
+        <h2><i class="fas fa-id-card"></i> Contact</h2>
         <p>Get in touch via email or connect with me on LinkedIn and GitHub!</p>
+        <div class="social-links">
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2026 Padmalakshmi G. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
