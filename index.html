@@ -14,12 +14,18 @@
     <header>
         <div class="nav-container">
             <div class="logo">Padmalakshmi G</div>
-            <nav>
+            <nav id="nav-menu">
                 <a href="#hero"><i class="fas fa-home"></i> Home</a>
                 <a href="#about"><i class="fas fa-user"></i> About</a>
                 <a href="#skills"><i class="fas fa-code"></i> Skills</a>
                 <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
             </nav>
+            <div class="nav-controls">
+                <button id="theme-toggle" aria-label="Toggle Dark/Light Mode"><i class="fas fa-moon"></i></button>
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -62,10 +68,25 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section with Form Validation -->
     <section id="contact">
-        <h2><i class="fas fa-id-card"></i> Contact</h2>
-        <p>Get in touch via email or connect with me on LinkedIn and GitHub!</p>
+        <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+        <p>Send me a message or connect with me via social links below.</p>
+        
+        <form id="contact-form">
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Your Email Address" required>
+            </div>
+            <div class="form-group">
+                <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+            <p id="form-feedback"></p>
+        </form>
+
         <div class="social-links">
             <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
             <a href="https://github.com" target="_blank"><i class="fab fa-github"></i> GitHub</a>
@@ -77,5 +98,7 @@
         <p>&copy; 2026 Padmalakshmi G. All rights reserved.</p>
     </footer>
 
+    <!-- JavaScript File -->
+    <script src="script.js" defer></script>
 </body>
 </html>
