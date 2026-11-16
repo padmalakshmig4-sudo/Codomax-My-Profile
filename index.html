@@ -17,6 +17,7 @@
             <nav id="nav-menu">
                 <a href="#hero"><i class="fas fa-home"></i> Home</a>
                 <a href="#about"><i class="fas fa-user"></i> About</a>
+                <a href="#projects"><i class="fas fa-folder-open"></i> Projects</a>
                 <a href="#skills"><i class="fas fa-code"></i> Skills</a>
                 <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
             </nav>
@@ -35,19 +36,60 @@
             <img src="photo.jpeg" alt="Padmalakshmi G">
             <h1>Hi, I'm Padmalakshmi G</h1>
             <p>Computer Science Student & Web Developer</p>
-            <a href="#contact" class="btn">Get in Touch</a>
+            <div class="hero-btns">
+                <a href="#contact" class="btn">Get in Touch</a>
+                <a href="#resume" class="btn btn-outline"><i class="fas fa-download"></i> Resume</a>
+            </div>
         </div>
     </section>
 
-    <!-- About Me Section -->
+    <!-- About & Education Section -->
     <section id="about">
-        <h2><i class="fas fa-user-graduate"></i> About Me</h2>
-        <p>I am a second-year Computer Science & Engineering undergraduate student at Chennai Institute of Technology with a strong passion for full-stack development, interactive system design, and software engineering.</p>
+        <h2><i class="fas fa-user-graduate"></i> About Me & Education</h2>
+        <p>I am a second-year Computer Science & Engineering undergraduate student at <strong>Chennai Institute of Technology</strong> with a strong passion for full-stack development, interactive system design, and software engineering.</p>
+        
+        <div class="education-box">
+            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+            <p><strong>B.E. Computer Science Engineering</strong></p>
+            <p>Chennai Institute of Technology | 2025 – 2029 (Expected)</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2><i class="fas fa-laptop-code"></i> Featured Projects</h2>
+        <div class="projects-grid">
+            
+            <!-- Project 1: Pramaan -->
+            <div class="project-card">
+                <div>
+                    <h3>Pramaan</h3>
+                    <p>An urban application platform built using Java Spring Boot REST API backend, asynchronous HTML5/JS dashboard views, and integrated Firebase Realtime Database connections.</p>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/padmalakshmig4-sudo" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://YOUR-PRAMAAN-LIVE-URL.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                </div>
+            </div>
+
+            <!-- Project 2: EcoStream ML -->
+            <div class="project-card">
+                <div>
+                    <h3>EcoStream ML</h3>
+                    <p>A machine learning-driven environmental and resource monitoring platform featuring predictive analytics, real-time data pipelines, and interactive visualizations.</p>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/padmalakshmig4-sudo/YOUR-ECOSTREAM-REPO" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://YOUR-ECOSTREAM-LIVE-DEMO-URL.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                </div>
+            </div>
+
+        </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills">
-        <h2><i class="fas fa-laptop-code"></i> Skills</h2>
+        <h2><i class="fas fa-tools"></i> Skills</h2>
         <div class="skills-grid">
             <div class="skill-card">
                 <i class="fab fa-html5"></i>
@@ -55,7 +97,7 @@
             </div>
             <div class="skill-card">
                 <i class="fab fa-js"></i>
-                <h3>JavaScript & TypeScript</h3>
+                <h3>JavaScript & UI/UX</h3>
             </div>
             <div class="skill-card">
                 <i class="fab fa-java"></i>
@@ -68,7 +110,14 @@
         </div>
     </section>
 
-    <!-- Contact Section with Form Validation -->
+    <!-- Resume Download Section -->
+    <section id="resume" style="text-align: center;">
+        <h2><i class="fas fa-file-alt"></i> My Resume</h2>
+        <p>Download my resume to learn more about my academic background, technical proficiencies, and project experience.</p>
+        <a href="Padmalakshmi G new resume.pdf" class="btn" download><i class="fas fa-download"></i> Download Resume PDF</a>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact">
         <h2><i class="fas fa-envelope"></i> Contact Me</h2>
         <p>Send me a message or connect with me via social links below.</p>
