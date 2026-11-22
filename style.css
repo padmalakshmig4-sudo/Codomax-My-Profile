@@ -159,6 +159,7 @@ section h2::after {
     justify-content: center;
     gap: 15px;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 /* Styled Button */
@@ -334,16 +335,20 @@ section h2::after {
 /* Social Links */
 .social-links {
     margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 .social-links a {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     background: #f1f5f9;
     color: #1e293b;
     padding: 10px 20px;
     border-radius: 8px;
     text-decoration: none;
-    margin-right: 12px;
     font-weight: 600;
     border: 1px solid #e2e8f0;
     transition: all 0.3s ease;
@@ -446,7 +451,7 @@ body.dark-mode .social-links a {
     }
 
     nav.active {
-        max-height: 250px;
+        max-height: 300px;
         padding: 20px 0;
     }
 

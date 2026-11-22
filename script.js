@@ -38,22 +38,19 @@ contactForm.addEventListener('submit', (e) => {
     const email = document.getElementById('email').value.trim();
     const message = document.getElementById('message').value.trim();
 
-    // Check if fields are empty
     if (!name || !email || !message) {
         formFeedback.textContent = 'Please fill out all required fields.';
         formFeedback.style.color = '#ef4444';
         return;
     }
 
-    // Basic email format check
-    const emailPattern = /^[^s@]+@[^s@]+\.[^s@]+$/;
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email)) {
         formFeedback.textContent = 'Please enter a valid email address.';
         formFeedback.style.color = '#ef4444';
         return;
     }
 
-    // Success state
     formFeedback.textContent = 'Thank you! Your message has been sent successfully.';
     formFeedback.style.color = '#10b981';
     contactForm.reset();
