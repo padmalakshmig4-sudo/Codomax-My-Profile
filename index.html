@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Padmalakshmi G — Computer Science & Engineering student, web developer, and ML project builder.">
     <title>Padmalakshmi G | Portfolio</title>
     <!-- FontAwesome Icons CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -13,135 +14,143 @@
     <!-- Header & Navigation -->
     <header>
         <div class="nav-container">
-            <div class="logo">Padmalakshmi G</div>
-            <nav id="nav-menu">
+            <a href="#hero" class="logo">Padmalakshmi G</a>
+            <nav id="nav-menu" aria-label="Primary Navigation">
                 <a href="#hero"><i class="fas fa-home"></i> Home</a>
                 <a href="#about"><i class="fas fa-user"></i> About</a>
                 <a href="#projects"><i class="fas fa-folder-open"></i> Projects</a>
                 <a href="#skills"><i class="fas fa-code"></i> Skills</a>
+                <a href="#resume"><i class="fas fa-file-alt"></i> Resume</a>
                 <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
             </nav>
             <div class="nav-controls">
-                <button id="theme-toggle" aria-label="Toggle Dark/Light Mode"><i class="fas fa-moon"></i></button>
-                <div class="hamburger" id="hamburger">
+                <button type="button" id="theme-toggle" aria-label="Toggle Dark or Light Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button type="button" class="hamburger" id="hamburger" aria-label="Toggle Mobile Menu" aria-expanded="false" aria-controls="nav-menu">
                     <i class="fas fa-bars"></i>
-                </div>
+                </button>
             </div>
         </div>
     </header>
 
-    <!-- Hero / Home Section -->
-    <section id="hero">
-        <div class="hero-content">
-            <img src="photo.jpeg" alt="Padmalakshmi G">
-            <h1>Hi, I'm Padmalakshmi G</h1>
-            <p>Computer Science Student &amp; Web Developer</p>
-            <div class="hero-btns">
-                <a href="#contact" class="btn">Get in Touch</a>
-                <a href="#resume" class="btn btn-outline"><i class="fas fa-download"></i> Resume</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About & Education Section -->
-    <section id="about">
-        <h2><i class="fas fa-user-graduate"></i> About Me &amp; Education</h2>
-        <p>I am a second-year Computer Science &amp; Engineering undergraduate student at <strong>Chennai Institute of Technology</strong> with a strong passion for full-stack development, interactive system design, and software engineering.</p>
-        
-        <div class="education-box">
-            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
-            <p><strong>B.E. Computer Science Engineering</strong></p>
-            <p>Chennai Institute of Technology | 2025 – 2029 (Expected)</p>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2><i class="fas fa-laptop-code"></i> Featured Projects</h2>
-        <div class="projects-grid">
-            
-            <!-- Project 1: Pramaan -->
-            <div class="project-card">
-                <div>
-                    <h3>Pramaan</h3>
-                    <p>An urban application platform built using Java Spring Boot REST API backend, asynchronous HTML5/JS dashboard views, and integrated Firebase Realtime Database connections.</p>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/padmalakshmig4-sudo" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
-                    <a href="https://YOUR-PRAMAAN-LIVE-URL.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+    <main>
+        <!-- Hero / Home Section -->
+        <section id="hero">
+            <div class="hero-content">
+                <img src="photo.jpeg" alt="Padmalakshmi G profile photo">
+                <h1>Hi, I'm Padmalakshmi G</h1>
+                <p>Computer Science Student &amp; Web Developer</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn">Get in Touch</a>
+                    <a href="#resume" class="btn btn-outline"><i class="fas fa-download"></i> Resume</a>
                 </div>
             </div>
+        </section>
 
-            <!-- Project 2: EcoStream ML -->
-            <div class="project-card">
-                <div>
-                    <h3>EcoStream ML</h3>
-                    <p>A machine learning-driven environmental and resource monitoring platform featuring predictive analytics, real-time data pipelines, and interactive visualizations.</p>
+        <!-- About & Education Section -->
+        <section id="about">
+            <h2><i class="fas fa-user-graduate"></i> About Me &amp; Education</h2>
+            <p>I am a second-year Computer Science &amp; Engineering undergraduate student at <strong>Chennai Institute of Technology</strong> with hands-on experience in web development, Python/ML projects, Java, and software engineering.</p>
+
+            <div class="education-box">
+                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                <p><strong>B.E. Computer Science and Engineering</strong></p>
+                <p>Chennai Institute of Technology, Chennai | 2025 – 2029 (Expected)</p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2><i class="fas fa-laptop-code"></i> Featured Projects</h2>
+            <div class="projects-grid">
+
+                <!-- Project 1: Pramaan -->
+                <article class="project-card">
+                    <div>
+                        <h3>Pramaan</h3>
+                        <p>An urban application platform built with a Java Spring Boot REST API backend, asynchronous HTML5/JS dashboard views, and Firebase Realtime Database integration.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/padmalakshmig4-sudo" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://YOUR-PRAMAAN-LIVE-URL.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </article>
+
+                <!-- Project 2: EcoStream ML -->
+                <article class="project-card">
+                    <div>
+                        <h3>EcoStream ML</h3>
+                        <p>A machine learning-driven environmental and resource monitoring platform featuring predictive analytics, data pipelines, and interactive insights.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/padmalakshmig4-sudo/YOUR-ECOSTREAM-REPO" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://YOUR-ECOSTREAM-LIVE-DEMO-URL.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2><i class="fas fa-tools"></i> Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5 &amp; CSS3</h3>
                 </div>
-                <div class="project-links">
-                    <a href="https://github.com/padmalakshmig4-sudo/YOUR-ECOSTREAM-REPO" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
-                    <a href="https://YOUR-ECOSTREAM-LIVE-DEMO-URL.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript &amp; UI/UX</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-java"></i>
+                    <h3>Java &amp; Spring Boot</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Git &amp; GitHub</h3>
                 </div>
             </div>
+        </section>
 
-        </div>
-    </section>
+        <!-- Resume Download Section -->
+        <section id="resume" class="resume-section">
+            <h2><i class="fas fa-file-alt"></i> My Resume</h2>
+            <p>Download my resume to view my academic background, technical skills, certifications, and project work.</p>
+            <a href="resume.pdf" class="btn" download="Padmalakshmi_G_Resume.pdf"><i class="fas fa-download"></i> Download Resume PDF</a>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2><i class="fas fa-tools"></i> Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <i class="fab fa-html5"></i>
-                <h3>HTML5 &amp; CSS3</h3>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-js"></i>
-                <h3>JavaScript &amp; UI/UX</h3>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-java"></i>
-                <h3>Java &amp; Spring Boot</h3>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-git-alt"></i>
-                <h3>Git &amp; GitHub</h3>
-            </div>
-        </div>
-    </section>
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+            <p>Send a message or connect with me directly using the links below.</p>
 
-    <!-- Resume Download Section -->
-    <section id="resume" style="text-align: center;">
-        <h2><i class="fas fa-file-alt"></i> My Resume</h2>
-        <p>Download my resume to learn more about my academic background, technical proficiencies, and project experience.</p>
-        <a href="resume.pdf" class="btn" download><i class="fas fa-download"></i> Download Resume PDF</a>
-    </section>
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name" class="sr-only">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="sr-only">Your Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="sr-only">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+                <p id="form-feedback" role="status" aria-live="polite"></p>
+            </form>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2><i class="fas fa-envelope"></i> Contact Me</h2>
-        <p>Send me a message or connect with me via social links below.</p>
-        
-        <form id="contact-form">
-            <div class="form-group">
-                <input type="text" id="name" placeholder="Your Name" required>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/padmalakshmi-g-153a61381/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/padmalakshmig4-sudo" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                <a href="mailto:padmalakshmig4@gmail.com"><i class="fas fa-envelope"></i> Email</a>
             </div>
-            <div class="form-group">
-                <input type="email" id="email" placeholder="Your Email Address" required>
-            </div>
-            <div class="form-group">
-                <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn">Send Message</button>
-            <p id="form-feedback"></p>
-        </form>
-
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/padmalakshmi-g-153a61381/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="https://github.com/padmalakshmig4-sudo" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>
-            <a href="mailto:padmalakshmig4@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
